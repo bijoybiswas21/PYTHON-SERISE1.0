@@ -1,6 +1,7 @@
 #'https://github.com/flutter/flutter.git/'
 
 
+
 num=int(input("Enter a number:-"))
 
 sum=0
