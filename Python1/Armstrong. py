@@ -1,0 +1,12 @@
+num = int(input("Enter a number: "))
+temp = num
+sum_armstrong = 0
+n_digits = len(str(num))
+while temp > 0:
+    digit = temp % 10
+    sum_armstrong += digit ** n_digits
+    temp //= 10
+if sum_armstrong == num:
+    print(num, "is an Armstrong number.")
+else:
+    print(num, "is not an Armstrong number.")
