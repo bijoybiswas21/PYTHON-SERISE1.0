@@ -1,0 +1,23 @@
+import pandas as pd
+
+# Initialize an empty list to store user input
+data = []
+
+# Loop to collect user input for 5 rows
+for i in range(5):
+    name = input(f"Enter Employee Name {i+1}: ")
+    emp_id = input(f"Enter Employee ID {i+1}: ")
+    basic = input(f"Enter Basic Salary for Employee {i+1}: ")
+    
+    # Append each row as a dictionary to the list
+    data.append({
+        'Employee Name': name,
+        'Employee ID': emp_id,
+        'Basic Salary': basic
+    })
+
+# Create DataFrame from the collected data
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print(df)
